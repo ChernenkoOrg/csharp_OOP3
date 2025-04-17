@@ -13,14 +13,8 @@ namespace OOP3
         Hard
     }
 
-    internal class GameBuilder : IBuilder
+    public class GameBuilder : IBuilder
     {
-        public enum Dificulty 
-        {
-            Easy,
-            Medium,
-            Hard
-        }
 
         private double attempts;
         private int randomNum;
@@ -99,7 +93,7 @@ namespace OOP3
             return this;
         }
 
-        public Game Build()
+        public IGame Build()
         {
             if (randomNum == 0 || attempts == 0)
                 throw new InvalidOperationException("Необходимо сгенерировать случайное число и рассчитать попытки.");

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    internal interface IBuilder
+    public interface IBuilder
     {
         IBuilder SetRange();
         IBuilder GenerateRandomNumber();
         IBuilder CalculateAttempts();
-        Game Build();
+        IGame Build();
     }
 }
