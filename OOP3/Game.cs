@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    internal class Game
+    public class Game : IGame
     {
-        public int Range { get; internal set; }
-        public int RandomNum { get; internal set; }
-        public double Attempts { get; internal set; }
+        public int Range { get; set; }
+        public int RandomNum { get; set; }
+        public double Attempts { get; set; }
 
         public Game() { }
 

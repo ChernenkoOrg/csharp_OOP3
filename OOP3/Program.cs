@@ -11,7 +11,7 @@ namespace OOP3
         static void Main(string[] args)
         {
 
-            Game newGame = new GameBuilder().SetRange()
+            IGame newGame = new GameBuilder().SetRange()
                 .CalculateAttempts()
                 .GenerateRandomNumber()
                 .Build();
